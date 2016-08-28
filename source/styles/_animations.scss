@@ -1,0 +1,20 @@
+.Paper-appear {
+  animation: Paper .25s ease-in-out;
+}
+
+.Paper-leave {
+  animation: Paper .25s ease-in-out reverse;
+}
+
+@keyframes Paper {
+  0% {
+    transform: scale(0, 0);
+    border-top-right-radius: 100%;
+    transform-origin: bottom left;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    transform-origin: bottom left;
+  }
+}

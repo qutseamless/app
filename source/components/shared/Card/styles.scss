@@ -1,0 +1,11 @@
+@import "../../../styles/palette";
+
+.Card {
+  position: relative;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  background-color: $paper-050;
+  overflow-y: scroll;
+
+  box-shadow: 0 0 1rem .125rem rgba($paper-900, .57);
+}

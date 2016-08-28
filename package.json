@@ -1,0 +1,102 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "the client application for seamless",
+  "license": "MIT",
+  "contributors": [
+    "Leon Pearce <leonp1991@gmail.com>"
+  ],
+  "scripts": {
+    "start": "babel-node tools/dev",
+    "test": "watch 'npm run mocha' source",
+    "docs": "watch 'npm run document' src",
+    "deploy": "babel-node tools/deploy",
+    "build": "babel-node tools/build",
+    "mocha": "babel-node tools/test",
+    "document": "babel-node tools/docs",
+    "open:coverage": "npm run mocha && open docs/coverage/index.html",
+    "open:api": "npm run document && open docs/api/index.html"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node",
+      "stage-0",
+      "react"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb-base",
+    "rules": {
+      "no-console": 0,
+      "no-unsafe-negation": 0,
+      "generator-star-spacing": 0
+    }
+  },
+  "nyc": {
+    "report-dir": "./docs/coverage",
+    "extension": [
+      ".js",
+      ".jsx"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": "source**spec.js*",
+    "include": "source**.js*",
+    "statements": 80,
+    "functions": 80,
+    "branches": 80,
+    "lines": 80
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "*",
+    "babel-preset-es2015-node": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "*",
+    "chai-as-promised": "*",
+    "chai-immutable": "*",
+    "chai-spies": "*",
+    "copy": "^0.3.0",
+    "css-loader": "*",
+    "enzyme": "*",
+    "esdoc": "*",
+    "esdoc-es7-plugin": "0.0.3",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "fetch-mock": "*",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jsdom": "^9.4.2",
+    "json-loader": "^0.5.4",
+    "mocha": "*",
+    "node-sass": "*",
+    "null-loader": "^0.1.1",
+    "nyc": "^8.1.0",
+    "react-addons-test-utils": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "watch": "*",
+    "webpack": "*",
+    "webpack-dashboard": "^0.1.8",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "immutable": "*",
+    "react": "*",
+    "react-addons-css-transition-group": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "redux-immutable-combine-reducers": "*",
+    "redux-thunk": "*"
+  },
+  "engine": "node 6.4.0"
+}
