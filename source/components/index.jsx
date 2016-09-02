@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import * as actions from '../logic/user/actions';
 
-import Login from './login_temp';
+import Login from './login';
 import Home from './home';
 
 import './styles.scss';

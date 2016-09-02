@@ -4,8 +4,8 @@ import { mount } from 'enzyme';
 import { expect } from 'chai';
 
 import { App } from './';
-import { Login } from './Login';
-import { Home } from './Home';
+import { Login } from './login';
+import { Home } from './home';
 
 
 /**  @test {App} */
