@@ -20,12 +20,15 @@ bundle(config)
   }
 
   try {
-    await run('mocha', ['tools/test/temp/tests.bundle.js', '--opts', 'tools/test/mocha.opts']);
+    process.exitCode = await run('mocha', [
+      'tools/test/temp/tests.bundle.js', '--opts', 'tools/test/mocha.opts',
+    ]);
 
     await clean('.nyc_output');
     await clean('tools/test/temp');
   } catch (error) {
     console.error(error);
+    process.exit(1);
   }
 });
 

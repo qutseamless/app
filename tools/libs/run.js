@@ -16,7 +16,7 @@ import { spawn } from 'child_process';
 export function run(command, args) {
   return new Promise(resolve => {
     const task = spawn(command, args, { stdio: 'inherit' });
-    task.on('close', resolve);
+    task.on('exit', resolve);
   }
   );
 }

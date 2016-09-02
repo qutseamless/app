@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/qutseamless/client.svg?branch=master)](https://travis-ci.org/qutseamless/client)
+
 # Seamless Client
 Seamless client is the front end of the Seamless application.
 
