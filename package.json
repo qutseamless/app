@@ -24,15 +24,6 @@
       "react"
     ]
   },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb-base",
-    "rules": {
-      "no-console": 0,
-      "no-unsafe-negation": 0,
-      "generator-star-spacing": 0
-    }
-  },
   "nyc": {
     "report-dir": "./docs/coverage",
     "extension": [

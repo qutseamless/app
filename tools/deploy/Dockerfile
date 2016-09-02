@@ -1,4 +1,3 @@
 FROM nginx:latest
 
-WORKDIR /usr/share/nginx
-COPY build html
+COPY build /usr/share/nginx/html
