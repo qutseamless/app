@@ -13,6 +13,7 @@
     "deploy": "babel-node tools/deploy",
     "build": "babel-node tools/build",
     "mocha": "babel-node tools/test",
+    "mocha:coverage": "babel-node tools/test/coverage",
     "document": "babel-node tools/docs",
     "open:coverage": "npm run mocha && open docs/coverage/index.html",
     "open:api": "npm run document && open docs/api/index.html"
