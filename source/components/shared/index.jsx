@@ -1,2 +1,2 @@
 export * from './temp_card';
-export * from './logo';
+export * from './temp_logo';
