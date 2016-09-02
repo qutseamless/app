@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 
 import * as actions from '../logic/user/actions';
 
-import Login from './Login';
-import Home from './Home';
+import Login from './login';
+import Home from './home';
 
 import './styles.scss';
 
@@ -36,3 +36,8 @@ const props = state => ({
  * @returns {Component} component - the redux connected version of App.
  */
 export default connect(props, actions)(App);
+
+/*
+  eslint
+  react/prefer-stateless-function: 0,
+*/

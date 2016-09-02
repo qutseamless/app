@@ -1,16 +1,18 @@
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 
 import { Card, Logo } from '../shared';
 
 import './styles.scss';
 
-export class Login extends Component {
+export class LoginComponent extends PureComponent {
   constructor(props) {
     super(props);
     this.updateField = this.updateField.bind(this);
-    this.updateField = this.updateField.bind(this);
-
-    this.state = { email: '', password: '' };
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      email: '',
+      password: '',
+    };
   }
 
   updateField(field, value) {
@@ -65,7 +67,7 @@ export class Login extends Component {
 }
 
 
-Login.propTypes = {
+LoginComponent.propTypes = {
   login: PropTypes.func,
 };
 
