@@ -4,7 +4,7 @@ import { Card, Logo } from '../shared';
 
 import './styles.scss';
 
-class Login extends PureComponent {
+export class LoginCompoent extends PureComponent {
   constructor(props) {
     super(props);
     this.updateField = this.updateField.bind(this);
@@ -67,9 +67,9 @@ class Login extends PureComponent {
 }
 
 
-Login.propTypes = {
+LoginCompoent.propTypes = {
   login: PropTypes.func,
 };
 
 
-export default Login;
+export default LoginCompoent;

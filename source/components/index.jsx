@@ -11,7 +11,7 @@ import './styles.scss';
 /**
  * @extends React.Component
  */
-export class App extends PureComponent {
+export class AppComponent extends PureComponent {
   render() {
     const { props } = this;
 
@@ -35,7 +35,7 @@ const props = state => ({
 /**
  * @returns {Component} component - the redux connected version of App.
  */
-export default connect(props, actions)(App);
+export default connect(props, actions)(AppComponent);
 
 /*
   eslint

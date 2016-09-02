@@ -3,22 +3,22 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { expect } from 'chai';
 
-import { App } from './';
-import { Login } from './login';
-import { Home } from './home';
+import { AppComponent } from './';
+import { LoginComponent } from './login';
+import { HomeComponent } from './home';
 
 
 /**  @test {App} */
 describe('components: App', () => {
   it('should render <Login /> when no props.user', () => {
-    const mock = mount(<Login />);
-    expect(mock.find(Login)).to.have.length(1);
+    const mock = mount(<AppComponent />);
+    expect(mock.find(LoginComponent)).to.have.length(1);
   });
 
   it('should render <Home /> when has props.user', () => {
     const props = { user: {} };
-    const mock = mount(<App {...props} />);
-    expect(mock.find(Home)).to.have.length(1);
+    const mock = mount(<AppComponent {...props} />);
+    expect(mock.find(HomeComponent)).to.have.length(1);
   });
 });
 

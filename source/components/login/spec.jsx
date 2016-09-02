@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import { expect, spy } from 'chai';
 
-import { Login } from './';
+import { LoginComponent } from './';
 
 
 /**  @test {Login} */
@@ -14,7 +14,7 @@ describe('components: Login', () => {
   /**
    * create a clean version of component before each test.
    */
-  beforeEach(() => { LOGIN = shallow(<Login />); });
+  beforeEach(() => { LOGIN = shallow(<LoginComponent />); });
 
   it('should have state: email and password', () => {
     expect(LOGIN.state().email).to.be.a('string');
@@ -27,7 +27,7 @@ describe('components: Login', () => {
   });
 
   it('should have elements: a form, email and password inputs, and submit button', () => {
-    LOGIN = render(<Login />);
+    LOGIN = render(<LoginComponent />);
 
     expect(LOGIN.find('form')).to.have.length(1);
     expect(LOGIN.find('input[type=email]')).to.have.length(1);
@@ -50,7 +50,7 @@ describe('components: Login', () => {
       const event = { preventDefault: spy() };
       const props = { login() {} };
 
-      LOGIN = mount(<Login {...props} />);
+      LOGIN = mount(<LoginComponent {...props} />);
       expect(event.preventDefault).to.not.have.been.called;
       LOGIN.instance().submitForm(event);
       expect(event.preventDefault).to.have.been.called.once;
@@ -60,7 +60,7 @@ describe('components: Login', () => {
       const event = { preventDefault() {} };
       const props = { login: spy() };
 
-      LOGIN = mount(<Login {...props} />);
+      LOGIN = mount(<LoginComponent {...props} />);
       expect(LOGIN.props().login).to.be.a.spy;
       LOGIN.instance().submitForm(event);
       expect(LOGIN.props().login).to.have.been.called.once;
