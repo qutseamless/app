@@ -7,11 +7,6 @@ const config = {
     'webpack/hot/dev-server',
     './source/main.jsx',
   ],
-  output: {
-    filename: 'bundle.js',
-    path: './build',
-    publicPath: '/',
-  },
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' },

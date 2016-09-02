@@ -13,4 +13,6 @@ run('webpack-dashboard', [
   'webpack-dev-server',
   '--config',
   `${__dirname}/webpack.config.js`,
+  '--content-base', 'build/',
+  '--hot', '--inline',
 ]);
