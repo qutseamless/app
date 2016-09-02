@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 
-import { Card, Logo } from '../Shared';
+import { Card, Logo } from '../shared';
 
 import './styles.scss';
 
