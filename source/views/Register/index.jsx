@@ -16,7 +16,7 @@ import Footer from 'grommet/components/Footer';
  * @type {Function} Register Stateless Component
  */
 export function Register (props) {
-  const { register, registerSetField, registerUser } = props;
+  const { register, registerSetField, registerAccount } = props;
   const {
     name,
     email,
@@ -25,6 +25,7 @@ export function Register (props) {
     industry,
     password,
   } = register;
+  console.log(name);
   /**
    * executes on render
    */
@@ -61,7 +62,7 @@ export function Register (props) {
         </Box>
 
         <Footer direction="row" reverse={true} pad="medium">
-          <Button label="Sign Up" onClick={() => register(register)} primary />
+          <Button label="Sign Up" onClick={() => registerAccount(register)} primary />
         </Footer>
       </Section>
     </Box>
@@ -74,7 +75,9 @@ export function Register (props) {
  * Register propTypes
  */
 Register.propTypes = {
-  //
+  registerSetField: PropTypes.func,
+  registerAccount: PropTypes.func,
+  register: PropTypes.object,
 };
 
 

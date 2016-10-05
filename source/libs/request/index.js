@@ -51,7 +51,7 @@ function appendQuery(endpoint, data) {
  * @returns {Promise} resolving with the response.
  */
 async function request(endpoint, method, data, requestHeaders) {
-  let headers = appendHeaders(requestHeaders, defaultHeaders)
+  let headers = requestHeaders ? appendHeaders(requestHeaders, defaultHeaders) : defaultHeaders;
 
   const payload = { headers, method };
 

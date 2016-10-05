@@ -24,7 +24,7 @@ export const registerClearField = field => ({
 /**
  * validates and submits form to register account
  */
-export const register = form => dispatch => {
+export const registerAccount = form => dispatch => {
   const { name, email, businessName, address, industry, password } = form;
 
   // TODO validate fields

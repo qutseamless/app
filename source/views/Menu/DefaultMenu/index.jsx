@@ -2,7 +2,7 @@
  * @module DefaultMenu component
  */
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import Link from '../../Shared/Link';
 import GrommetMenu from 'grommet/components/Menu';
 import styles from './styles';
 
