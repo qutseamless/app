@@ -6,7 +6,6 @@
   "contributors": [
     "Leon Pearce <leonp1991@gmail.com>"
   ],
-  "license": "MIT",
   "scripts": {
     "start": "node ./tools/start",
     "test": "node ./tools/test",
@@ -24,7 +23,10 @@
   },
   "nyc": {
     "report-dir": "./docs/test",
-    "extension": [".js", ".jsx"],
+    "extension": [
+      ".js",
+      ".jsx"
+    ],
     "reporter": [
       "text-summary",
       "html"
@@ -64,6 +66,7 @@
     "webpack-node-externals": "^1.4.3"
   },
   "dependencies": {
+    "babel-plugin-transform-regenerator": "^6.16.1",
     "grommet": "https://github.com/grommet/grommet/tarball/stable",
     "immutable": "^3.8.1",
     "localforage": "git+https://github.com/localForage/localForage.git",
