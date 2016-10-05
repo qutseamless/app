@@ -1,7 +1,4 @@
-/**
- * @module this module accepts a webpack config and builds it promiesified.
- */
-import webpack from 'webpack';
+const webpack = require('webpack');
 
 
 /**
@@ -9,15 +6,14 @@ import webpack from 'webpack';
  * @param {Object} config the bundle config
  * @returns {Promise} returns a promise which resolves on task completion.
  */
-export function bundle(config) {
+function bundle(config) {
   return new Promise(
-    resolve => webpack(config).run(resolve)
+    resolve => webpack(config)
+    .run(err => {
+      if (err) throw err;
+      resolve();
+    })
   );
 }
 
-export default bundle;
-
-/*
-eslint
-import/no-extraneous-dependencies: 0,
-*/
+module.exports = bundle;

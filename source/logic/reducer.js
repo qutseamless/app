@@ -1,11 +1,14 @@
-// import combineReducers from 'redux-immutable-combine-reducers';
-import { Map } from 'immutable';
+/**
+ * @module <%- name %> reducer
+ */
+import { combineReducers } from 'redux-immutable';
+import user from './user/reducer';
+import register from './register/reducer';
 
 /**
- * @function the core reducer used by the application, comprised of all
- * activity reducers.
+ * @function the core reducer used by the application.
  */
-// export default combineReducers({});
-export default function (STATE = new Map()) {
-  return STATE;
-}
+export default combineReducers({
+  user,
+  register,
+});

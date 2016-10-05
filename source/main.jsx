@@ -1,17 +1,16 @@
-import 'babel-polyfill';
-
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import React from 'react';
 
 import { Provider } from 'react-redux';
+
+import init from './services/init';
 import store from './logic/store';
+import Router from './views';
 
-import AppView from './components';
-
-
-ReactDOM.render(
-  <Provider store={store}>
-    <AppView />
-  </Provider>,
-  document.getElementById('app')
+init(store)
+.then(
+  () => render(
+    <Provider store={store}><Router /></Provider>,
+    document.getElementById('mount')
+  )
 );

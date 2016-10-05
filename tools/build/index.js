@@ -1,17 +1,24 @@
 /**
  * @module manages the task of building the app.
  */
-import { clean, copy, bundle } from '../libs';
-import config from './webpack.config';
+const { clean, dir, copy, bundle } = require('../libs');
+const config = require('./webpack.config');
 
 /**
  * performs tasks of:
- *  - clean directory.
+ *  - clean app dir.
+ *  - make app dir if !app dir
  *  - copy static assets.
- *  - rebuild modules.
+ *  - build bundle.
  */
 clean('build')
-  .then(() => copy('source/index.html', 'build', { srcBase: 'source' }))
-  .then(() => copy('source/assets/**', 'build', { srcBase: 'source' }))
-  .then(() => bundle(config))
-  .catch(console.log);
+.then(() => dir('build'))
+.then(() => copy('source/index.html', 'build'))
+.then(() => copy('source/assets', 'build'))
+.then(() => bundle(config))
+.catch(console.log);
+
+/*
+  eslint
+  no-console: 0,
+*/

@@ -1,15 +1,22 @@
+const nodeExternals = require('webpack-node-externals');
+
+const externals = nodeExternals();
 const config = {
   target: 'node',
-  entry: `${__dirname}/tests.js`,
+  devtool: 'inline-source-map',
+  entry: `${__dirname}/setup.js`,
   output: {
     path: `${__dirname}/temp`,
     filename: 'tests.bundle.js',
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['istanbul-instrumenter', 'babel'] },
-      { test: /\.scss$/, loader: 'null-loader' },
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' },
       { test: /\.json$/, loader: 'json-loader' },
+      {
+        test: /\.s?css$/,
+        loaders: ['file?name=bundle.css', 'extract', 'css?sourceMap', 'sass?sourceMap'],
+      },
     ],
   },
   resolve: {
@@ -17,12 +24,8 @@ const config = {
       '', '.js', '.jsx', '.json', '.scss',
     ],
   },
-  externals: {
-    'react/lib/ExecutionEnvironment': true,
-    'react/lib/ReactContext': true,
-    'react/addons': true,
-  },
   devtool: 'inline-source-map',
+  externals: [externals],
 };
 
-export default config;
+module.exports = config;
