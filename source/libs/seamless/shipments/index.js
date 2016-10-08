@@ -2,9 +2,9 @@
  * @module seamless/shipment
  */
 import { post, get, update, del } from '../../request';
-import { api } from '../';
 
-const endpoint = `${api}/shipment`;
+const endpoint = process.env.NODE_ENV !== 'production' ?
+  'http://localhost:3000/api/shipments' : null;
 
 
 /**
@@ -22,10 +22,10 @@ export async function createShipment(data) {
 
 
 /**
- * gets a shipment from seamless.
+ * get shipments from seamless.
  * @param {Object} data of the shipment.
  */
-export async function getShipment(data) {
+export async function getShipments(data) {
   // TODO: validate data of the shipment.
   try {
     return await get(endpoint, data);

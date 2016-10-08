@@ -7,7 +7,6 @@ import styles from './styles';
 import Box from 'grommet/components/Box';
 import Section from 'grommet/components/Section';
 import Header from 'grommet/components/Header';
-import Form from 'grommet/components/Form';
 import FormField from 'grommet/components/FormField';
 import Button from 'grommet/components/Button';
 import Footer from 'grommet/components/Footer';
@@ -25,17 +24,15 @@ export function Register (props) {
     industry,
     password,
   } = register;
-  console.log(name);
   /**
    * executes on render
    */
   return (
-    <Box align="center" basis="full" justify="center">
+    <Box align="center" full={true} justify="center">
       <Section size="xlarge">
         <Header pad="medium">
-          <h2>Register Account</h2>
+          <h3>Register Your Account...</h3>
         </Header>
-
         <Box pad="medium" size="large">
           <FormField label="Full Name">
             <input type="text" value={name || ''} onChange={event => registerSetField('name', event.target.value)} />

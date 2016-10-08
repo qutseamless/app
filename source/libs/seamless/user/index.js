@@ -2,9 +2,9 @@
  * @module seamless/user
  */
 import { post, get, update, del } from '../../request';
-import { api } from '../';
 
-const endpoint = `${api}/user`;
+const endpoint = process.env.NODE_ENV !== 'production' ?
+  'http://localhost:3000/api/users' : null;
 
 
 /**
@@ -22,10 +22,24 @@ export async function createUser(data) {
 
 
 /**
- * gets a user from seamless.
+ * gets current user from seamless.
  * @param {Object} data of the user.
  */
-export async function getUser(data) {
+export async function getMe(data) {
+  // TODO: validate data of the user.
+  try {
+    return await get(`${endpoint}/me`, data);
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
+
+/**
+ * gets a users from seamless.
+ * @param {Object} data of the user.
+ */
+export async function getUsers(data) {
   // TODO: validate data of the user.
   try {
     return await get(endpoint, data);

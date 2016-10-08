@@ -3,11 +3,12 @@
  */
 import React, { PropTypes } from 'react';
 
-import Hero from 'grommet/components/Hero';
+import Section from 'grommet/components/Section';
 import Article from 'grommet/components/Article';
 import Heading from 'grommet/components/Heading';
 import Paragraph from 'grommet/components/Paragraph';
 
+import Header from '../Shared/Header';
 import styles from './styles';
 
 
@@ -20,15 +21,20 @@ export function AboutUs (props) {
    */
   return (
     <div>
-      <Hero backgroundImage="assets/hero.png" />
-      <Article pad="large">
-        <Heading>Seamless Shipment Logistics</Heading>
-        <Paragraph size="large">
-          Seamless is changing the way we view logistics. Breaking away from the traditional
-          approach, Seamless is providing a Innovation first approach with a cloud technology
-          backed logistics network.
-        </Paragraph>
-      </Article>
+      <Header {...props} title="About Us" />
+      {/*<Hero>
+        <Heading>Seamless</Heading>
+      </Hero>*/}
+      <Section pad="medium">
+        <Article pad="small">
+          <Heading>Seamless Shipment Logistics</Heading>
+          <Paragraph size="large">
+            Seamless is changing the way we view logistics. Breaking away from the traditional
+            approach, Seamless is providing a Innovation first approach with a cloud technology
+            backed logistics network.
+          </Paragraph>
+        </Article>
+      </Section>
     </div>
   );
 }

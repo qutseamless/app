@@ -9,21 +9,20 @@ import Cluster from 'grommet/components/icons/base/Cluster';
 
 import styles from './styles';
 
-
 /**
  * @type {Function} LogIn Stateless Component
  */
 export function LogIn (props) {
-  /**
-   * TODO: specify design of LogIn
-   * executes on render
-   */
+  const { userLogin } = props;
+
   return (
     <Box className={styles.view} justify="center" align="center">
       <LoginForm
+        colorIndex="neutral-4"
         logo={<Cluster />}
         title="Seamless"
         secondaryText="Enter your username and password"
+        onSubmit={({ username: email, password }) => userLogin({ email, password })}
         errors={[]}
       />
     </Box>
@@ -36,7 +35,7 @@ export function LogIn (props) {
  * LogIn propTypes
  */
 LogIn.propTypes = {
-  //
+  userLogin: PropTypes.func,
 };
 
 

@@ -2,9 +2,10 @@
  * @module seamless/user
  */
 import { post } from '../../request';
-import { api } from '../';
 
-const endpoint = `${api}/register`;
+
+const endpoint = process.env.NODE_ENV !== 'production' ?
+  'http://localhost:3000/api/register' : null;
 
 
 /**

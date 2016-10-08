@@ -62,7 +62,13 @@ async function request(endpoint, method, data, requestHeaders) {
   let url = method !== 'POST' ? appendQuery(endpoint, data) : endpoint;
 
   try {
-    return await fetch(url, payload);
+    const response = await fetch(url, payload);
+
+    if (!response.ok) {
+      throw new Error('meaningful error...');
+    }
+
+    return await response.json();
   } catch (error) {
     throw new Error(error);
   }

@@ -6,24 +6,24 @@ import { Map, fromJS } from 'immutable';
 
 
 /**
- * @type {Map} initialState of user
+ * @type {Map} initialState
  */
 export const initialState = new Map();
 
 
 /**
- * @type {Function} setState sets the state of the user
+ * @type {Function} setState
  */
-export const setState = ({ val }) => fromJS(val);
+export const setState = data => fromJS(data);
 
 
 /**
- * @type {Function} setState sets a state fragment of the user
+ * @type {Function} putState
  */
-export const setFragment = (state, { fragment, val }) => state.set(fragment, fromJS(val));
+export const putState = (state, data) => state.merge(fromJS(data));
 
 
 /**
- * @type {Function} setState sets a state field of the user
+ * @type {Function} delState
  */
-export const setField = (state, { field, val }) => state.set(field, val);
+export const delState = () => initialState;

@@ -15,7 +15,7 @@ export function Link (props) {
    * executes on render
    */
   return (
-    <RouterLink className={`${className} ${styles.view}`} {...rest} />
+    <RouterLink className={`${styles.view} ${className}`} {...rest} />
   );
 }
 

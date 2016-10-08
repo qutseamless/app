@@ -1,7 +1,9 @@
 /**
  * @module register actions
  */
-import * as API from '../../../libs/seamless/register';
+ import { hashHistory } from 'react-router';
+import * as API from '../../../libs/seamless';
+import { userSetState } from '../../user/actions';
 
 /**
  * set a field on the register form
@@ -27,23 +29,22 @@ export const registerClearField = field => ({
 export const registerAccount = form => dispatch => {
   const { name, email, businessName, address, industry, password } = form;
 
-  // TODO validate fields
+  let oauth;
   API.register({ name, email, businessName, address, industry, password })
-  .then(res => {
-    if (res.status === 201) {
-      return res.json();
-    } else {
-      // TODO gracefully handle rejected calls
-    }
+  .then(response => {
+    oauth = response;
+    const { token } = oauth;
+    return API.getMe({ token })
   })
-  .then(token => {
-    dispatch({ type: 'USER_SET_FIELD', data: { field: 'signedIn', val: true } });
-    dispatch({
-      type: 'USER_SET_FRAGMENT',
-      data: {
-        fragment: 'profile',
-        val: { name, email },
-      }
-    });
+  .then(response => {
+    const signedIn = true;
+    const user = response;
+    dispatch(userSetState({ signedIn, oauth, ...user }));
+    hashHistory.push('Dashboard');
+  })
+  .catch(error => {
+    dispatch({ type: 'TOAST_SET_STATE' });
+    /* TODO resolve this linting issue by creating a logger */
+    console.log(error); /* eslint no-console: 0 */
   });
 }

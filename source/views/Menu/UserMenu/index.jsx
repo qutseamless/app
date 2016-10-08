@@ -11,10 +11,7 @@ import styles from './styles';
  * @type {Function} UserMenu Stateless Component
  */
 export function UserMenu (props) {
-  /**
-   * TODO: specify design of UserMenu
-   * executes on render
-   */
+  const { userDelState } = props;
   return (
     <GrommetMenu primary={true}>
       <Link to="Dashboard">
@@ -23,8 +20,11 @@ export function UserMenu (props) {
       <Link to="Shipments">
         Shipments
       </Link>
-      <Link to="Settings">
-        Settings
+      <Link to="Account">
+        Account
+      </Link>
+      <Link onClick={userDelState} to="AboutUs">
+        Log Out
       </Link>
     </GrommetMenu>
   );
@@ -36,7 +36,7 @@ export function UserMenu (props) {
  * UserMenu propTypes
  */
 UserMenu.propTypes = {
-  //
+  userDelState: PropTypes.func,
 };
 
 

@@ -12,8 +12,9 @@ import AboutUs from './AboutUs';
 import Register from './Register';
 import LogIn from './LogIn';
 import Dashboard from './Dashboard';
-import Settings from './Settings';
+import Account from './Account';
 import Shipments from './Shipments';
+import Packets from './Packets';
 
 /**
  * @param {Component} Router for managing the current activity
@@ -27,7 +28,8 @@ export const Router = () => (
       <Route path="LogIn" component={LogIn} />
       <Route path="Dashboard" component={Dashboard} />
       <Route path="Shipments" component={Shipments} />
-      <Route path="Settings" component={Settings} />
+      <Route path="Shipments/:id" component={Packets} />
+      <Route path="Account" component={Account} />
     </Route>
   </ReactRouter>
 );

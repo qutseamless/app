@@ -4,7 +4,10 @@
 import React, { PropTypes } from 'react';
 import styles from './styles';
 
+import ShipmentControls from './ShipmentControls';
+import ShipmentsTable from './ShipmentsTable';
 
+import Header from '../Shared/Header';
 /**
  * @type {Function} Shipments Stateless Component
  */
@@ -14,7 +17,11 @@ export function Shipments (props) {
    * executes on render
    */
   return (
-    <div />
+    <div>
+      <Header {...props} title="Shipments" light={true} />
+      <ShipmentControls {...props} />
+      <ShipmentsTable {...props} />
+    </div>
   );
 }
 

@@ -1,16 +1,16 @@
 /**
- * @module Settings Component
+ * @module Devices Component
  */
 import React, { PropTypes, PureComponent } from 'react';
 import styles from './styles';
 
 
 /**
- * @type {PureComponent} Settings PureComponent
+ * @type {PureComponent} Devices PureComponent
  */
-export class Settings extends PureComponent {
+export class Devices extends PureComponent {
   /**
-   * TODO: specify initial state and bindings of Settings
+   * TODO: specify initial state and bindings of Devices
    * executes on instantiation
    */
   constructor(props) {
@@ -20,7 +20,7 @@ export class Settings extends PureComponent {
 
 
   /**
-   * TODO: specify setup of Settings
+   * TODO: specify setup of Devices
    * executes post mount
    */
   componentDidMount() {
@@ -29,7 +29,7 @@ export class Settings extends PureComponent {
 
 
   /**
-   * TODO: specify cleanup of Settings
+   * TODO: specify cleanup of Devices
    * executes pre unmount
    */
   componentWillMount() {
@@ -37,7 +37,7 @@ export class Settings extends PureComponent {
   }
 
   /**
-   * TODO: specify design of Settings
+   * TODO: specify design of Devices
    * executes on render
    */
   render() {
@@ -49,10 +49,10 @@ export class Settings extends PureComponent {
 
 
 /**
- * TODO: specify the component propTypes of Settings
- * Settings propTypes
+ * TODO: specify the component propTypes of Devices
+ * Devices propTypes
  */
-Settings.propTypes = {
+Devices.propTypes = {
   //
 };
 
@@ -60,4 +60,4 @@ Settings.propTypes = {
 /**
  * default export
  */
-export default Settings;
+export default Devices;

@@ -5,6 +5,7 @@ import React, { PropTypes } from 'react';
 
 import Sidebar from 'grommet/components/Sidebar';
 import Header from 'grommet/components/Header';
+import Button from 'grommet/components/Button';
 import Footer from 'grommet/components/Footer';
 import Title from 'grommet/components/Title';
 import Close from 'grommet/components/icons/base/Close';
@@ -18,17 +19,17 @@ import styles from './styles';
  * @type {Function} Menu Stateless Component
  */
 export function Menu (props) {
-  const { user: { signedIn } } = props;
+  const { appHideMenu, user: { signedIn } } = props;
 
-  const menu = signedIn? <UserMenu /> : <DefaultMenu />
+  const menu = signedIn ? <UserMenu {...props} /> : <DefaultMenu {...props} />
   /**
    * executes on render
    */
   return (
-    <Sidebar size="small" colorIndex="grey-1" fixed>
+    <Sidebar size="small" colorIndex="neutral-3" fixed>
       <Header pad="medium" justify="between">
-        <Title>Welcome</Title>
-        <Close onClick={f => f} />
+        <Title pad={{ vertical: 'small' }}>Welcome</Title>
+        <Button icon={<Close />} onClick={appHideMenu} />
       </Header>
 
       {menu}
@@ -46,6 +47,7 @@ export function Menu (props) {
  * Menu propTypes
  */
 Menu.propTypes = {
+  appHideMenu: PropTypes.func,
   user: PropTypes.object,
 };
 
