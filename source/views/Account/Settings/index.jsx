@@ -53,30 +53,34 @@ export class Settings extends PureComponent {
       <Section>
         <section>
           <Heading tag="h2">Your Account</Heading>
-          <Section>
-            <Box direction="row" justify="between" align="center" pad="medium">
-              <Heading tag="h3">Change Email</Heading>
+          <Section colorIndex="light-2" pad="none">
+            <Box pad="medium">
+              <Heading tag="h3">Change your email address.</Heading>
+            </Box>
+            <Box direction="row" pad={{ horizontal: "medium" }} justify="end">
               <Form>
                 <FormField label="New Email">
                   <input type="text" value={''} onChange={f => f} />
                 </FormField>
               </Form>
             </Box>
-            <Box direction="row" justify="end" pad="medium">
+            <Box direction="row" pad="medium" justify="end">
               <Button label="Submit" primary onClick={f => f} />
             </Box>
 
-            <Box direction="row" justify="between" align="center" pad="medium">
-              <Heading tag="h3">Change Password</Heading>
-              <Form>
-                <FormField label="New Password">
-                  <input type="text" value={''} onChange={f => f} />
-                </FormField>
-              </Form>
-            </Box>
-            <Box direction="row" justify="end" pad="medium">
-              <Button label="Submit" primary onClick={f => f} />
-            </Box>
+            <Section>
+              <Box direction="row" justify="between" align="center" pad="none">
+                <Heading tag="h4">Change your password</Heading>
+                <Form>
+                  <FormField label="New Password">
+                    <input type="text" value={''} onChange={f => f} />
+                  </FormField>
+                </Form>
+              </Box>
+              <Box direction="row" justify="end" pad={{ vertical: "medium"}}>
+                <Button label="Submit" primary onClick={f => f} />
+              </Box>
+            </Section>
           </Section>
         </section>
 
