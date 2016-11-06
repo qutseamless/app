@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Router as ReactRouter,
-  hashHistory, // TODO: swap to browserHistory
+  browserHistory, // TODO: swap to browserHistory
   IndexRedirect,
   Route,
 } from 'react-router';
@@ -20,7 +20,7 @@ import Packets from './Packets';
  * @param {Component} Router for managing the current activity
  */
 export const Router = () => (
-  <ReactRouter history={hashHistory}>
+  <ReactRouter history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRedirect to="AboutUs" />
       <Route path="AboutUs" component={AboutUs} />

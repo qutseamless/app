@@ -1,7 +1,7 @@
 /**
  * @module register actions
  */
- import { hashHistory } from 'react-router';
+ import { browserHistory } from 'react-router';
 import * as API from '../../../libs/seamless';
 import { userSetState } from '../../user/actions';
 
@@ -40,7 +40,7 @@ export const registerAccount = form => dispatch => {
     const signedIn = true;
     const user = response;
     dispatch(userSetState({ signedIn, oauth, ...user }));
-    hashHistory.push('Dashboard');
+    browserHistory.push('Dashboard');
   })
   .catch(error => {
     dispatch({ type: 'TOAST_SET_STATE' });

@@ -68,6 +68,7 @@
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "color-temp": "0.0.2",
+    "express": "^4.14.0",
     "google-map-react": "^0.21.0",
     "grommet": "https://github.com/grommet/grommet/tarball/stable",
     "immutable": "^3.8.1",

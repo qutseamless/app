@@ -6,8 +6,6 @@ const dashboard = new Dashboard();
 const config = {
   devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:8080/',
-    'webpack/hot/dev-server',
     './source/main.jsx',
   ],
   module: {
@@ -25,6 +23,13 @@ const config = {
       '', '.js', '.jsx', '.json', '.scss',
     ],
   },
+
+  devServer: {
+    historyApiFallback: true,
+    contentBase: "build",
+    compress: true,
+  },
+
   sassLoader: { includePaths: ['./node_modules'] },
   plugins: [extracted, dashboard],
 };

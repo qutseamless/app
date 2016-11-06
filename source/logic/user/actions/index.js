@@ -1,7 +1,7 @@
 /**
  * @module user actions
  */
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import * as API from '../../../libs/seamless';
 
 /**
@@ -47,7 +47,7 @@ export const userLogin = form => dispatch => {
     const signedIn = true;
     const user = response;
     dispatch(userSetState({ signedIn, oauth, ...user }));
-    hashHistory.push('Dashboard');
+    browserHistory.push('Dashboard');
   })
   .catch(error => {
     dispatch({ type: 'TOAST_SET_STATE' });
