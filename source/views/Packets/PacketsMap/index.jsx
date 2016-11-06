@@ -17,6 +17,14 @@ export class PacketsMap extends PureComponent {
     super(props);
   }
 
+  componentDidMount() {
+    const { user, params, packetsGet } = this.props;
+    const { id: shipmentId } = params;
+    const { token } = user.oauth;
+
+    packetsGet({ token, shipmentId });
+  }
+
   render() {
     const { packets } = this.props;
     const pins = packets.map(
@@ -47,6 +55,9 @@ export class PacketsMap extends PureComponent {
 PacketsMap.propTypes = {
   defaultCenter: PropTypes.object,
   packets: PropTypes.array,
+  packetsGet: PropTypes.func,
+  params: PropTypes.object,
+  user: PropTypes.object,
 };
 
 /**
