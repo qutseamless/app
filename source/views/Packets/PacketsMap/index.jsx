@@ -20,7 +20,9 @@ export class PacketsMap extends PureComponent {
   render() {
     const { packets } = this.props;
     const pins = packets.map(
-      (i, k) => (<Pin key={k} {...i} />)
+      (i, k) => (
+        <Pin key={k} {...i} />
+      )
     );
 
     return (
