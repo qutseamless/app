@@ -8,7 +8,7 @@ import Box from 'grommet/components/Box';
 import Title from 'grommet/components/Title';
 import TableRow from 'grommet/components/TableRow';
 import Table from 'grommet/components/Table';
-import TimeStamp from 'grommet/components/TimeStamp';
+import Timestamp from 'grommet/components/Timestamp';
 
 import Link from '../../Shared/Link';
 /**
@@ -58,7 +58,7 @@ export class PacketsTable extends PureComponent {
         <td>{i._id}</td>
         <td>{i.location.lat}</td>
         <td>{i.location.long}</td>
-        <td><TimeStamp value={i.createdAt} /></td>
+        <td><Timestamp value={i.createdAt} /></td>
       </TableRow>
     ))
     return (

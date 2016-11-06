@@ -8,7 +8,7 @@ import Box from 'grommet/components/Box';
 import Title from 'grommet/components/Title';
 import TableRow from 'grommet/components/TableRow';
 import Table from 'grommet/components/Table';
-import TimeStamp from 'grommet/components/TimeStamp';
+import Timestamp from 'grommet/components/Timestamp';
 
 import Link from '../../Shared/Link';
 /**
@@ -55,7 +55,7 @@ export class ShipmentsTable extends PureComponent {
       <TableRow key={k}>
         <td><Link className={styles.link} to={`shipments/${i._id}`}>{i._id}</Link></td>
         <td>{i.deviceId}</td>
-        <td><TimeStamp value={i.createdAt} /></td>
+        <td><Timestamp value={i.createdAt} /></td>
       </TableRow>
     ))
     return (

@@ -3,7 +3,7 @@
  */
 import React, { PropTypes } from 'react';
 
-import TimeStamp from 'grommet/components/TimeStamp';
+import Timestamp from 'grommet/components/Timestamp';
 import Box from 'grommet/components/Box';
 import styles from './styles';
 
@@ -35,7 +35,7 @@ export function Pin (props) {
           <tr><td>speed:</td><td>{speed} km/h</td></tr>
         </tbody>
         </table>
-        <TimeStamp value={new Date()} />
+        <Timestamp value={new Date()} />
       </div>
     );
   }

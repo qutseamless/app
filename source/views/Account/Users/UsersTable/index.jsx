@@ -8,7 +8,7 @@ import Box from 'grommet/components/Box';
 import Title from 'grommet/components/Title';
 import TableRow from 'grommet/components/TableRow';
 import Table from 'grommet/components/Table';
-import TimeStamp from 'grommet/components/TimeStamp';
+import Timestamp from 'grommet/components/Timestamp';
 
 /**
  * @type {PureComponent} UsersTable PureComponent
