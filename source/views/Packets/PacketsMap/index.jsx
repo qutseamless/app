@@ -35,7 +35,7 @@ export class PacketsMap extends PureComponent {
 
     return (
       <GoogleMap
-        defaultCenter={packets[0] || this.props.defaultCenter}
+        defaultCenter={packets[packets.length] || this.props.defaultCenter}
         defaultZoom={11}
         bootstrapURLKeys={{
           language: 'en',

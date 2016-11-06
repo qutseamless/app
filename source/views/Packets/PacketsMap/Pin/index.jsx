@@ -14,6 +14,7 @@ import styles from './styles';
 export function Pin (props) {
   const {
     $hover,
+    humidity,
     speed,
     temp,
     course,
@@ -30,6 +31,7 @@ export function Pin (props) {
         <table>
         <tbody>
           <tr><td>temperature:</td><td>{temp} c</td></tr>
+          <tr><td>Humidity:</td><td>{humidity} %</td></tr>
         </tbody>
         </table>
         <Timestamp value={new Date()} />
