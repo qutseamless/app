@@ -19,9 +19,7 @@ const initialState = new Map();
  * - redux dev tools
  */
 const thunk = applyMiddleware(thunkMiddleware);
-const devtools = window.devToolsExtension && process.env.NODE_ENV !== 'production' ?
-  window.devToolsExtension()
-  : f => f;
+const devtools = window.devToolsExtension() || function (f) { return f; };
 
 
 /**
