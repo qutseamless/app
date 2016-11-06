@@ -4,7 +4,6 @@
 import React, { PropTypes } from 'react';
 import GrommetMenu from 'grommet/components/Menu';
 import Link from '../../Shared/Link';
-import styles from './styles';
 
 
 /**
@@ -14,9 +13,6 @@ export function UserMenu (props) {
   const { userDelState } = props;
   return (
     <GrommetMenu primary={true}>
-      <Link to="Dashboard">
-        Dashboard
-      </Link>
       <Link to="Shipments">
         Shipments
       </Link>

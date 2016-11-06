@@ -40,7 +40,7 @@ export const registerAccount = form => dispatch => {
     const signedIn = true;
     const user = response;
     dispatch(userSetState({ signedIn, oauth, ...user }));
-    browserHistory.push('Dashboard');
+    browserHistory.push('Shipments');
   })
   .catch(error => {
     dispatch({ type: 'TOAST_SET_STATE' });
