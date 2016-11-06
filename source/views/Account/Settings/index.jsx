@@ -69,7 +69,7 @@ export class Settings extends PureComponent {
             </Box>
 
             <Section>
-              <Box direction="row" justify="between" align="center" pad="none">
+              <Box direction="row" justify="between" pad={{ horizontal: "medium" }} align="center">
                 <Heading tag="h4">Change your password</Heading>
                 <Form>
                   <FormField label="New Password">
@@ -77,7 +77,7 @@ export class Settings extends PureComponent {
                   </FormField>
                 </Form>
               </Box>
-              <Box direction="row" justify="end" pad={{ vertical: "medium"}}>
+              <Box direction="row" justify="end" pad="medium">
                 <Button label="Submit" primary onClick={f => f} />
               </Box>
             </Section>

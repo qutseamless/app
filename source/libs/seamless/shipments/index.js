@@ -4,7 +4,7 @@
 import { post, get, update, del } from '../../request';
 
 const endpoint = process.env.NODE_ENV !== 'production' ?
-  'http://localhost:3000/api/shipments' : null;
+  'http://localhost:3000/api/shipment' : 'http://52.63.159.167:3000/api/shipment';
 
 
 /**

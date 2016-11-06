@@ -1,33 +1,18 @@
 /**
  * @module Packets component
  */
-import React, { PropTypes } from 'react';
-import styles from './styles';
+import React from 'react';
 
-import Box from 'grommet/components/Box';
-import PacketsTable from './PacketsTable';
+import PacketsMap from './PacketsMap';
 
 /**
  * @type {Function} Packets Stateless Component
  */
 export function Packets (props) {
-  /**
-   * TODO: specify design of Packets
-   * executes on render
-   */
   return (
-    <PacketsTable {...props} />
+    <PacketsMap {...props} />
   );
 }
-
-
-/**
- * TODO: specify the component propTypes of Packets
- * Packets propTypes
- */
-Packets.propTypes = {
-  //
-};
 
 
 /**

@@ -1,0 +1,18 @@
+/**
+ * @module Pin styles
+ */
+:local(.Pin) {
+  border-radius: 50%;
+  border: 1px solid #000;
+  height: 1rem;
+  width: 1rem;
+}
+
+:local(.popup) {
+  margin: 1rem 0 0 -5rem;
+  background-color: #fff;
+  padding: 1rem;
+  width: 12rem;
+  height: 11rem;
+  border-radius: 0.25rem;
+}
