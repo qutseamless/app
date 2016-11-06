@@ -30,9 +30,6 @@ export function Pin (props) {
         <table>
         <tbody>
           <tr><td>temperature:</td><td>{temp} c</td></tr>
-          <tr><td>altitude:</td><td>{alt} m</td></tr>
-          <tr><td>heading:</td><td>{course} deg</td></tr>
-          <tr><td>speed:</td><td>{speed} km/h</td></tr>
         </tbody>
         </table>
         <Timestamp value={new Date()} />
