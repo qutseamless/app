@@ -1,0 +1,1118 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 423,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 30,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 29,
+      "end": 69,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 40
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 38,
+          "end": 41,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "line": 4,
+              "column": 12
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 38,
+            "end": 41,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 12
+              }
+            },
+            "name": "Map",
+            "leadingComments": null
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 38,
+            "end": 41,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 12
+              }
+            },
+            "name": "Map",
+            "leadingComments": [
+              {
+                "type": "Block",
+                "value": "*\n * @module user core\n ",
+                "start": 0,
+                "end": 28,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 3
+                  }
+                },
+                "range": [
+                  0,
+                  28
+                ]
+              }
+            ]
+          },
+          "leadingComments": null
+        },
+        {
+          "type": "ImportSpecifier",
+          "start": 43,
+          "end": 49,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 14
+            },
+            "end": {
+              "line": 4,
+              "column": 20
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 43,
+            "end": 49,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 14
+              },
+              "end": {
+                "line": 4,
+                "column": 20
+              }
+            },
+            "name": "fromJS"
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 43,
+            "end": 49,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 14
+              },
+              "end": {
+                "line": 4,
+                "column": 20
+              }
+            },
+            "name": "fromJS"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 57,
+        "end": 68,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 28
+          },
+          "end": {
+            "line": 4,
+            "column": 39
+          }
+        },
+        "value": "immutable",
+        "rawValue": "immutable",
+        "raw": "'immutable'"
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @module user core\n ",
+          "start": 0,
+          "end": 28,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          },
+          "range": [
+            0,
+            28
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Map} initialState\n ",
+          "start": 73,
+          "end": 108,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 3
+            }
+          },
+          "range": [
+            73,
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "start": 109,
+      "end": 147,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 38
+        }
+      },
+      "declaration": {
+        "type": "VariableDeclaration",
+        "start": 116,
+        "end": 147,
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 11,
+            "column": 38
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 122,
+            "end": 146,
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 13
+              },
+              "end": {
+                "line": 11,
+                "column": 37
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 122,
+              "end": 134,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 13
+                },
+                "end": {
+                  "line": 11,
+                  "column": 25
+                }
+              },
+              "name": "initialState",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "NewExpression",
+              "start": 137,
+              "end": 146,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 28
+                },
+                "end": {
+                  "line": 11,
+                  "column": 37
+                }
+              },
+              "callee": {
+                "type": "Identifier",
+                "start": 141,
+                "end": 144,
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 32
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 35
+                  }
+                },
+                "name": "Map"
+              },
+              "arguments": []
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Map} initialState\n ",
+            "start": 73,
+            "end": 108,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 0
+              },
+              "end": {
+                "line": 10,
+                "column": 3
+              }
+            },
+            "range": [
+              73,
+              108
+            ]
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} setState\n ",
+            "start": 150,
+            "end": 186,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            },
+            "range": [
+              150,
+              186
+            ]
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Map} initialState\n ",
+          "start": 73,
+          "end": 108,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 3
+            }
+          },
+          "range": [
+            73,
+            108
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} setState\n ",
+          "start": 150,
+          "end": 186,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          },
+          "range": [
+            150,
+            186
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "start": 187,
+      "end": 232,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 45
+        }
+      },
+      "declaration": {
+        "type": "VariableDeclaration",
+        "start": 194,
+        "end": 232,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 7
+          },
+          "end": {
+            "line": 17,
+            "column": 45
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 200,
+            "end": 231,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 13
+              },
+              "end": {
+                "line": 17,
+                "column": 44
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 200,
+              "end": 208,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 13
+                },
+                "end": {
+                  "line": 17,
+                  "column": 21
+                }
+              },
+              "name": "setState",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "start": 211,
+              "end": 231,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 24
+                },
+                "end": {
+                  "line": 17,
+                  "column": 44
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": true,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 211,
+                  "end": 215,
+                  "loc": {
+                    "start": {
+                      "line": 17,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 28
+                    }
+                  },
+                  "name": "data"
+                }
+              ],
+              "body": {
+                "type": "CallExpression",
+                "start": 219,
+                "end": 231,
+                "loc": {
+                  "start": {
+                    "line": 17,
+                    "column": 32
+                  },
+                  "end": {
+                    "line": 17,
+                    "column": 44
+                  }
+                },
+                "callee": {
+                  "type": "Identifier",
+                  "start": 219,
+                  "end": 225,
+                  "loc": {
+                    "start": {
+                      "line": 17,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 38
+                    }
+                  },
+                  "name": "fromJS"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "start": 226,
+                    "end": 230,
+                    "loc": {
+                      "start": {
+                        "line": 17,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 17,
+                        "column": 43
+                      }
+                    },
+                    "name": "data"
+                  }
+                ]
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} setState\n ",
+            "start": 150,
+            "end": 186,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            },
+            "range": [
+              150,
+              186
+            ]
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} putState\n ",
+            "start": 235,
+            "end": 271,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 0
+              },
+              "end": {
+                "line": 22,
+                "column": 3
+              }
+            },
+            "range": [
+              235,
+              271
+            ]
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} setState\n ",
+          "start": 150,
+          "end": 186,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          },
+          "range": [
+            150,
+            186
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} putState\n ",
+          "start": 235,
+          "end": 271,
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 0
+            },
+            "end": {
+              "line": 22,
+              "column": 3
+            }
+          },
+          "range": [
+            235,
+            271
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "start": 272,
+      "end": 339,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 23,
+          "column": 67
+        }
+      },
+      "declaration": {
+        "type": "VariableDeclaration",
+        "start": 279,
+        "end": 339,
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 7
+          },
+          "end": {
+            "line": 23,
+            "column": 67
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 285,
+            "end": 338,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 13
+              },
+              "end": {
+                "line": 23,
+                "column": 66
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 285,
+              "end": 293,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 13
+                },
+                "end": {
+                  "line": 23,
+                  "column": 21
+                }
+              },
+              "name": "putState",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "start": 296,
+              "end": 338,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 24
+                },
+                "end": {
+                  "line": 23,
+                  "column": 66
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": true,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 297,
+                  "end": 302,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 30
+                    }
+                  },
+                  "name": "state"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 304,
+                  "end": 308,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 36
+                    }
+                  },
+                  "name": "data"
+                }
+              ],
+              "body": {
+                "type": "CallExpression",
+                "start": 313,
+                "end": 338,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 41
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 66
+                  }
+                },
+                "callee": {
+                  "type": "MemberExpression",
+                  "start": 313,
+                  "end": 324,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 41
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 52
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 313,
+                    "end": 318,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 41
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 46
+                      }
+                    },
+                    "name": "state"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 319,
+                    "end": 324,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 47
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 52
+                      }
+                    },
+                    "name": "merge"
+                  },
+                  "computed": false
+                },
+                "arguments": [
+                  {
+                    "type": "CallExpression",
+                    "start": 325,
+                    "end": 337,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 53
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 65
+                      }
+                    },
+                    "callee": {
+                      "type": "Identifier",
+                      "start": 325,
+                      "end": 331,
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 53
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 59
+                        }
+                      },
+                      "name": "fromJS"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "start": 332,
+                        "end": 336,
+                        "loc": {
+                          "start": {
+                            "line": 23,
+                            "column": 60
+                          },
+                          "end": {
+                            "line": 23,
+                            "column": 64
+                          }
+                        },
+                        "name": "data"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} putState\n ",
+            "start": 235,
+            "end": 271,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 0
+              },
+              "end": {
+                "line": 22,
+                "column": 3
+              }
+            },
+            "range": [
+              235,
+              271
+            ]
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} delState\n ",
+            "start": 342,
+            "end": 378,
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 0
+              },
+              "end": {
+                "line": 28,
+                "column": 3
+              }
+            },
+            "range": [
+              342,
+              378
+            ]
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} putState\n ",
+          "start": 235,
+          "end": 271,
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 0
+            },
+            "end": {
+              "line": 22,
+              "column": 3
+            }
+          },
+          "range": [
+            235,
+            271
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} delState\n ",
+          "start": 342,
+          "end": 378,
+          "loc": {
+            "start": {
+              "line": 26,
+              "column": 0
+            },
+            "end": {
+              "line": 28,
+              "column": 3
+            }
+          },
+          "range": [
+            342,
+            378
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "start": 379,
+      "end": 422,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 29,
+          "column": 43
+        }
+      },
+      "declaration": {
+        "type": "VariableDeclaration",
+        "start": 386,
+        "end": 422,
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 7
+          },
+          "end": {
+            "line": 29,
+            "column": 43
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 392,
+            "end": 421,
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 13
+              },
+              "end": {
+                "line": 29,
+                "column": 42
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 392,
+              "end": 400,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 13
+                },
+                "end": {
+                  "line": 29,
+                  "column": 21
+                }
+              },
+              "name": "delState",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "start": 403,
+              "end": 421,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 24
+                },
+                "end": {
+                  "line": 29,
+                  "column": 42
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": true,
+              "async": false,
+              "params": [],
+              "body": {
+                "type": "Identifier",
+                "start": 409,
+                "end": 421,
+                "loc": {
+                  "start": {
+                    "line": 29,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 42
+                  }
+                },
+                "name": "initialState"
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @type {Function} delState\n ",
+            "start": 342,
+            "end": 378,
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 0
+              },
+              "end": {
+                "line": 28,
+                "column": 3
+              }
+            },
+            "range": [
+              342,
+              378
+            ]
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Function} delState\n ",
+          "start": 342,
+          "end": 378,
+          "loc": {
+            "start": {
+              "line": 26,
+              "column": 0
+            },
+            "end": {
+              "line": 28,
+              "column": 3
+            }
+          },
+          "range": [
+            342,
+            378
+          ]
+        }
+      ]
+    }
+  ]
+}

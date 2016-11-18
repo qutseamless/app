@@ -1,0 +1,870 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 439,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 21,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 39,
+      "end": 89,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 50
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 48,
+          "end": 63,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "line": 4,
+              "column": 24
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 48,
+            "end": 63,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 24
+              }
+            },
+            "name": "combineReducers",
+            "leadingComments": null
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 48,
+            "end": 63,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 24
+              }
+            },
+            "name": "combineReducers",
+            "leadingComments": [
+              {
+                "type": "Block",
+                "value": "*\n * @module <%- name %> reducer\n ",
+                "start": 0,
+                "end": 38,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 3
+                  }
+                },
+                "range": [
+                  0,
+                  38
+                ]
+              }
+            ]
+          },
+          "leadingComments": null
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 71,
+        "end": 88,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 32
+          },
+          "end": {
+            "line": 4,
+            "column": 49
+          }
+        },
+        "value": "redux-immutable",
+        "rawValue": "redux-immutable",
+        "raw": "'redux-immutable'"
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @module <%- name %> reducer\n ",
+          "start": 0,
+          "end": 38,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          },
+          "range": [
+            0,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 90,
+      "end": 134,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 44
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 97,
+          "end": 106,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 5,
+              "column": 16
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 97,
+            "end": 106,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 7
+              },
+              "end": {
+                "line": 5,
+                "column": 16
+              }
+            },
+            "name": "shipments"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 112,
+        "end": 133,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 22
+          },
+          "end": {
+            "line": 5,
+            "column": 43
+          }
+        },
+        "value": "./shipments/reducer",
+        "rawValue": "./shipments/reducer",
+        "raw": "'./shipments/reducer'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 135,
+      "end": 177,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 42
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 142,
+          "end": 150,
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 7
+            },
+            "end": {
+              "line": 6,
+              "column": 15
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 142,
+            "end": 150,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 7
+              },
+              "end": {
+                "line": 6,
+                "column": 15
+              }
+            },
+            "name": "register"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 156,
+        "end": 176,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 21
+          },
+          "end": {
+            "line": 6,
+            "column": 41
+          }
+        },
+        "value": "./register/reducer",
+        "rawValue": "./register/reducer",
+        "raw": "'./register/reducer'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 178,
+      "end": 218,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 40
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 185,
+          "end": 192,
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 7
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 185,
+            "end": 192,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 7
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              }
+            },
+            "name": "packets"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 198,
+        "end": 217,
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 20
+          },
+          "end": {
+            "line": 7,
+            "column": 39
+          }
+        },
+        "value": "./packets/reducer",
+        "rawValue": "./packets/reducer",
+        "raw": "'./packets/reducer'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 219,
+      "end": 253,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 34
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 226,
+          "end": 230,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 7
+            },
+            "end": {
+              "line": 8,
+              "column": 11
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 226,
+            "end": 230,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 7
+              },
+              "end": {
+                "line": 8,
+                "column": 11
+              }
+            },
+            "name": "user"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 236,
+        "end": 252,
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 17
+          },
+          "end": {
+            "line": 8,
+            "column": 33
+          }
+        },
+        "value": "./user/reducer",
+        "rawValue": "./user/reducer",
+        "raw": "'./user/reducer'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 254,
+      "end": 286,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 32
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 261,
+          "end": 264,
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 7
+            },
+            "end": {
+              "line": 9,
+              "column": 10
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 261,
+            "end": 264,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 7
+              },
+              "end": {
+                "line": 9,
+                "column": 10
+              }
+            },
+            "name": "app"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 270,
+        "end": 285,
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 16
+          },
+          "end": {
+            "line": 9,
+            "column": 31
+          }
+        },
+        "value": "./app/reducer",
+        "rawValue": "./app/reducer",
+        "raw": "'./app/reducer'"
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @function the core reducer used by the application.\n ",
+          "start": 288,
+          "end": 350,
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
+              "column": 3
+            }
+          },
+          "range": [
+            288,
+            350
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 351,
+      "end": 438,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 3
+        }
+      },
+      "declaration": {
+        "type": "CallExpression",
+        "start": 366,
+        "end": 437,
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 15
+          },
+          "end": {
+            "line": 20,
+            "column": 2
+          }
+        },
+        "callee": {
+          "type": "Identifier",
+          "start": 366,
+          "end": 381,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 15
+            },
+            "end": {
+              "line": 14,
+              "column": 30
+            }
+          },
+          "name": "combineReducers",
+          "leadingComments": null
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "start": 382,
+            "end": 436,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 31
+              },
+              "end": {
+                "line": 20,
+                "column": 1
+              }
+            },
+            "properties": [
+              {
+                "type": "Property",
+                "start": 386,
+                "end": 395,
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 11
+                  }
+                },
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 386,
+                  "end": 395,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 11
+                    }
+                  },
+                  "name": "shipments"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Identifier",
+                  "start": 386,
+                  "end": 395,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 11
+                    }
+                  },
+                  "name": "shipments"
+                }
+              },
+              {
+                "type": "Property",
+                "start": 399,
+                "end": 407,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 10
+                  }
+                },
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 399,
+                  "end": 407,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 10
+                    }
+                  },
+                  "name": "register"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Identifier",
+                  "start": 399,
+                  "end": 407,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 10
+                    }
+                  },
+                  "name": "register"
+                }
+              },
+              {
+                "type": "Property",
+                "start": 411,
+                "end": 418,
+                "loc": {
+                  "start": {
+                    "line": 17,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 17,
+                    "column": 9
+                  }
+                },
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 411,
+                  "end": 418,
+                  "loc": {
+                    "start": {
+                      "line": 17,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 9
+                    }
+                  },
+                  "name": "packets"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Identifier",
+                  "start": 411,
+                  "end": 418,
+                  "loc": {
+                    "start": {
+                      "line": 17,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 9
+                    }
+                  },
+                  "name": "packets"
+                }
+              },
+              {
+                "type": "Property",
+                "start": 422,
+                "end": 426,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 6
+                  }
+                },
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 422,
+                  "end": 426,
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 6
+                    }
+                  },
+                  "name": "user"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Identifier",
+                  "start": 422,
+                  "end": 426,
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 6
+                    }
+                  },
+                  "name": "user"
+                }
+              },
+              {
+                "type": "Property",
+                "start": 430,
+                "end": 433,
+                "loc": {
+                  "start": {
+                    "line": 19,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 5
+                  }
+                },
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 430,
+                  "end": 433,
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 5
+                    }
+                  },
+                  "name": "app"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Identifier",
+                  "start": 430,
+                  "end": 433,
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 5
+                    }
+                  },
+                  "name": "app"
+                }
+              }
+            ]
+          }
+        ],
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @function the core reducer used by the application.\n ",
+            "start": 288,
+            "end": 350,
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 0
+              },
+              "end": {
+                "line": 13,
+                "column": 3
+              }
+            },
+            "range": [
+              288,
+              350
+            ]
+          }
+        ],
+        "trailingComments": []
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @function the core reducer used by the application.\n ",
+          "start": 288,
+          "end": 350,
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
+              "column": 3
+            }
+          },
+          "range": [
+            288,
+            350
+          ]
+        }
+      ]
+    }
+  ]
+}

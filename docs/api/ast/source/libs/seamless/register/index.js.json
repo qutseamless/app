@@ -1,0 +1,595 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 357,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 18,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 33,
+      "end": 70,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 37
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 42,
+          "end": 46,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "line": 4,
+              "column": 13
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 42,
+            "end": 46,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 13
+              }
+            },
+            "name": "post",
+            "leadingComments": null
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 42,
+            "end": 46,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 13
+              }
+            },
+            "name": "post",
+            "leadingComments": [
+              {
+                "type": "Block",
+                "value": "*\n * @module seamless/user\n ",
+                "start": 0,
+                "end": 32,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 3
+                  }
+                },
+                "range": [
+                  0,
+                  32
+                ]
+              }
+            ]
+          },
+          "leadingComments": null
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 54,
+        "end": 69,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 21
+          },
+          "end": {
+            "line": 4,
+            "column": 36
+          }
+        },
+        "value": "../../request",
+        "rawValue": "../../request",
+        "raw": "'../../request'"
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @module seamless/user\n ",
+          "start": 0,
+          "end": 32,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          },
+          "range": [
+            0,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 73,
+      "end": 212,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 82
+        }
+      },
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 79,
+          "end": 211,
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 6
+            },
+            "end": {
+              "line": 8,
+              "column": 81
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 79,
+            "end": 87,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 6
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              }
+            },
+            "name": "endpoint"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "start": 90,
+            "end": 211,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 17
+              },
+              "end": {
+                "line": 8,
+                "column": 81
+              }
+            },
+            "test": {
+              "type": "BinaryExpression",
+              "start": 90,
+              "end": 127,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 17
+                },
+                "end": {
+                  "line": 7,
+                  "column": 54
+                }
+              },
+              "left": {
+                "type": "MemberExpression",
+                "start": 90,
+                "end": 110,
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 37
+                  }
+                },
+                "object": {
+                  "type": "MemberExpression",
+                  "start": 90,
+                  "end": 101,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 28
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 90,
+                    "end": 97,
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 24
+                      }
+                    },
+                    "name": "process"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 98,
+                    "end": 101,
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 28
+                      }
+                    },
+                    "name": "env"
+                  },
+                  "computed": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 102,
+                  "end": 110,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 37
+                    }
+                  },
+                  "name": "NODE_ENV"
+                },
+                "computed": false
+              },
+              "operator": "!==",
+              "right": {
+                "type": "Literal",
+                "start": 115,
+                "end": 127,
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 42
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 54
+                  }
+                },
+                "value": "production",
+                "rawValue": "production",
+                "raw": "'production'"
+              }
+            },
+            "consequent": {
+              "type": "Literal",
+              "start": 132,
+              "end": 168,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 2
+                },
+                "end": {
+                  "line": 8,
+                  "column": 38
+                }
+              },
+              "value": "http://localhost:3000/api/register",
+              "rawValue": "http://localhost:3000/api/register",
+              "raw": "'http://localhost:3000/api/register'"
+            },
+            "alternate": {
+              "type": "Literal",
+              "start": 171,
+              "end": 211,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 41
+                },
+                "end": {
+                  "line": 8,
+                  "column": 81
+                }
+              },
+              "value": "http://52.63.159.167:3000/api/register",
+              "rawValue": "http://52.63.159.167:3000/api/register",
+              "raw": "'http://52.63.159.167:3000/api/register'"
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * creates a user with seamless\n * @param {Object} data of the user.\n ",
+          "start": 215,
+          "end": 291,
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 14,
+              "column": 3
+            }
+          },
+          "range": [
+            215,
+            291
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "start": 292,
+      "end": 356,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 1
+        }
+      },
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "start": 299,
+        "end": 356,
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 7
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 308,
+          "end": 316,
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 16
+            },
+            "end": {
+              "line": 15,
+              "column": 24
+            }
+          },
+          "name": "register",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 317,
+            "end": 321,
+            "loc": {
+              "start": {
+                "line": 15,
+                "column": 25
+              },
+              "end": {
+                "line": 15,
+                "column": 29
+              }
+            },
+            "name": "data"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 323,
+          "end": 356,
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 31
+            },
+            "end": {
+              "line": 17,
+              "column": 1
+            }
+          },
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "start": 327,
+              "end": 354,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 2
+                },
+                "end": {
+                  "line": 16,
+                  "column": 29
+                }
+              },
+              "argument": {
+                "type": "CallExpression",
+                "start": 334,
+                "end": 354,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 29
+                  }
+                },
+                "callee": {
+                  "type": "Identifier",
+                  "start": 334,
+                  "end": 338,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 13
+                    }
+                  },
+                  "name": "post"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "start": 339,
+                    "end": 347,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 22
+                      }
+                    },
+                    "name": "endpoint"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 349,
+                    "end": 353,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 28
+                      }
+                    },
+                    "name": "data"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * creates a user with seamless\n * @param {Object} data of the user.\n ",
+            "start": 215,
+            "end": 291,
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 0
+              },
+              "end": {
+                "line": 14,
+                "column": 3
+              }
+            },
+            "range": [
+              215,
+              291
+            ]
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * creates a user with seamless\n * @param {Object} data of the user.\n ",
+          "start": 215,
+          "end": 291,
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 14,
+              "column": 3
+            }
+          },
+          "range": [
+            215,
+            291
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1267 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 714,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 36,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 37,
+      "end": 99,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 62
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 46,
+          "end": 57,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "line": 4,
+              "column": 20
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 46,
+            "end": 57,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 20
+              }
+            },
+            "name": "createStore",
+            "leadingComments": null
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 46,
+            "end": 57,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 20
+              }
+            },
+            "name": "createStore",
+            "leadingComments": [
+              {
+                "type": "Block",
+                "value": "*\n * @module <%- name %> store\n ",
+                "start": 0,
+                "end": 36,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 3
+                  }
+                },
+                "range": [
+                  0,
+                  36
+                ]
+              }
+            ]
+          },
+          "leadingComments": null
+        },
+        {
+          "type": "ImportSpecifier",
+          "start": 59,
+          "end": 74,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 22
+            },
+            "end": {
+              "line": 4,
+              "column": 37
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 59,
+            "end": 74,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 22
+              },
+              "end": {
+                "line": 4,
+                "column": 37
+              }
+            },
+            "name": "applyMiddleware"
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 59,
+            "end": 74,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 22
+              },
+              "end": {
+                "line": 4,
+                "column": 37
+              }
+            },
+            "name": "applyMiddleware"
+          }
+        },
+        {
+          "type": "ImportSpecifier",
+          "start": 76,
+          "end": 83,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 39
+            },
+            "end": {
+              "line": 4,
+              "column": 46
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 76,
+            "end": 83,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 39
+              },
+              "end": {
+                "line": 4,
+                "column": 46
+              }
+            },
+            "name": "compose"
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 76,
+            "end": 83,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 39
+              },
+              "end": {
+                "line": 4,
+                "column": 46
+              }
+            },
+            "name": "compose"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 91,
+        "end": 98,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 54
+          },
+          "end": {
+            "line": 4,
+            "column": 61
+          }
+        },
+        "value": "redux",
+        "rawValue": "redux",
+        "raw": "'redux'"
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @module <%- name %> store\n ",
+          "start": 0,
+          "end": 36,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          },
+          "range": [
+            0,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 100,
+      "end": 132,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 32
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 109,
+          "end": 112,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 9
+            },
+            "end": {
+              "line": 5,
+              "column": 12
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "start": 109,
+            "end": 112,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 9
+              },
+              "end": {
+                "line": 5,
+                "column": 12
+              }
+            },
+            "name": "Map"
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 109,
+            "end": 112,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 9
+              },
+              "end": {
+                "line": 5,
+                "column": 12
+              }
+            },
+            "name": "Map"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 120,
+        "end": 131,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 20
+          },
+          "end": {
+            "line": 5,
+            "column": 31
+          }
+        },
+        "value": "immutable",
+        "rawValue": "immutable",
+        "raw": "'immutable'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 133,
+      "end": 175,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 42
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 140,
+          "end": 155,
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 7
+            },
+            "end": {
+              "line": 6,
+              "column": 22
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 140,
+            "end": 155,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 7
+              },
+              "end": {
+                "line": 6,
+                "column": 22
+              }
+            },
+            "name": "thunkMiddleware"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 161,
+        "end": 174,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 28
+          },
+          "end": {
+            "line": 6,
+            "column": 41
+          }
+        },
+        "value": "redux-thunk",
+        "rawValue": "redux-thunk",
+        "raw": "'redux-thunk'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 176,
+      "end": 208,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 32
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 183,
+          "end": 190,
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 7
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 183,
+            "end": 190,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 7
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              }
+            },
+            "name": "reducer"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 196,
+        "end": 207,
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 20
+          },
+          "end": {
+            "line": 7,
+            "column": 31
+          }
+        },
+        "value": "./reducer",
+        "rawValue": "./reducer",
+        "raw": "'./reducer'"
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Map} initialState is empty.\n ",
+          "start": 211,
+          "end": 256,
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 3
+            }
+          },
+          "range": [
+            211,
+            256
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 257,
+      "end": 288,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 31
+        }
+      },
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 263,
+          "end": 287,
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 6
+            },
+            "end": {
+              "line": 13,
+              "column": 30
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 263,
+            "end": 275,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 6
+              },
+              "end": {
+                "line": 13,
+                "column": 18
+              }
+            },
+            "name": "initialState",
+            "leadingComments": null
+          },
+          "init": {
+            "type": "NewExpression",
+            "start": 278,
+            "end": 287,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 21
+              },
+              "end": {
+                "line": 13,
+                "column": 30
+              }
+            },
+            "callee": {
+              "type": "Identifier",
+              "start": 282,
+              "end": 285,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 25
+                },
+                "end": {
+                  "line": 13,
+                  "column": 28
+                }
+              },
+              "name": "Map"
+            },
+            "arguments": []
+          },
+          "leadingComments": null
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @type {Map} initialState is empty.\n ",
+          "start": 211,
+          "end": 256,
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 3
+            }
+          },
+          "range": [
+            211,
+            256
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * setup store enchancers:\n * - thunk\n * - redux dev tools\n ",
+          "start": 291,
+          "end": 357,
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 20,
+              "column": 3
+            }
+          },
+          "range": [
+            291,
+            357
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 358,
+      "end": 405,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 47
+        }
+      },
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 364,
+          "end": 404,
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 6
+            },
+            "end": {
+              "line": 21,
+              "column": 46
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 364,
+            "end": 369,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 6
+              },
+              "end": {
+                "line": 21,
+                "column": 11
+              }
+            },
+            "name": "thunk",
+            "leadingComments": null
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 372,
+            "end": 404,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 14
+              },
+              "end": {
+                "line": 21,
+                "column": 46
+              }
+            },
+            "callee": {
+              "type": "Identifier",
+              "start": 372,
+              "end": 387,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 14
+                },
+                "end": {
+                  "line": 21,
+                  "column": 29
+                }
+              },
+              "name": "applyMiddleware"
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "start": 388,
+                "end": 403,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 45
+                  }
+                },
+                "name": "thunkMiddleware"
+              }
+            ]
+          },
+          "leadingComments": null
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * setup store enchancers:\n * - thunk\n * - redux dev tools\n ",
+          "start": 291,
+          "end": 357,
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 20,
+              "column": 3
+            }
+          },
+          "range": [
+            291,
+            357
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 406,
+      "end": 480,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 74
+        }
+      },
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 412,
+          "end": 479,
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 6
+            },
+            "end": {
+              "line": 22,
+              "column": 73
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 412,
+            "end": 420,
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 6
+              },
+              "end": {
+                "line": 22,
+                "column": 14
+              }
+            },
+            "name": "devtools"
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "start": 423,
+            "end": 479,
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 17
+              },
+              "end": {
+                "line": 22,
+                "column": 73
+              }
+            },
+            "left": {
+              "type": "CallExpression",
+              "start": 423,
+              "end": 449,
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 17
+                },
+                "end": {
+                  "line": 22,
+                  "column": 43
+                }
+              },
+              "callee": {
+                "type": "MemberExpression",
+                "start": 423,
+                "end": 447,
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 41
+                  }
+                },
+                "object": {
+                  "type": "Identifier",
+                  "start": 423,
+                  "end": 429,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 23
+                    }
+                  },
+                  "name": "window"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 430,
+                  "end": 447,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 41
+                    }
+                  },
+                  "name": "devToolsExtension"
+                },
+                "computed": false
+              },
+              "arguments": []
+            },
+            "operator": "||",
+            "right": {
+              "type": "FunctionExpression",
+              "start": 453,
+              "end": 479,
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 47
+                },
+                "end": {
+                  "line": 22,
+                  "column": 73
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 463,
+                  "end": 464,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 57
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 58
+                    }
+                  },
+                  "name": "f"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 466,
+                "end": 479,
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 60
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 73
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "start": 468,
+                    "end": 477,
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 62
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 71
+                      }
+                    },
+                    "argument": {
+                      "type": "Identifier",
+                      "start": 475,
+                      "end": 476,
+                      "loc": {
+                        "start": {
+                          "line": 22,
+                          "column": 69
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 70
+                        }
+                      },
+                      "name": "f"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * composed enhancers\n ",
+          "start": 483,
+          "end": 512,
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 0
+            },
+            "end": {
+              "line": 27,
+              "column": 3
+            }
+          },
+          "range": [
+            483,
+            512
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 513,
+      "end": 556,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 28,
+          "column": 43
+        }
+      },
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 519,
+          "end": 555,
+          "loc": {
+            "start": {
+              "line": 28,
+              "column": 6
+            },
+            "end": {
+              "line": 28,
+              "column": 42
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 519,
+            "end": 528,
+            "loc": {
+              "start": {
+                "line": 28,
+                "column": 6
+              },
+              "end": {
+                "line": 28,
+                "column": 15
+              }
+            },
+            "name": "enhancers",
+            "leadingComments": null
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 531,
+            "end": 555,
+            "loc": {
+              "start": {
+                "line": 28,
+                "column": 18
+              },
+              "end": {
+                "line": 28,
+                "column": 42
+              }
+            },
+            "callee": {
+              "type": "Identifier",
+              "start": 531,
+              "end": 538,
+              "loc": {
+                "start": {
+                  "line": 28,
+                  "column": 18
+                },
+                "end": {
+                  "line": 28,
+                  "column": 25
+                }
+              },
+              "name": "compose"
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "start": 539,
+                "end": 544,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 31
+                  }
+                },
+                "name": "thunk"
+              },
+              {
+                "type": "Identifier",
+                "start": 546,
+                "end": 554,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 33
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 41
+                  }
+                },
+                "name": "devtools"
+              }
+            ]
+          },
+          "leadingComments": null
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * composed enhancers\n ",
+          "start": 483,
+          "end": 512,
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 0
+            },
+            "end": {
+              "line": 27,
+              "column": 3
+            }
+          },
+          "range": [
+            483,
+            512
+          ]
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @function represents the api for reading and writing to the\n * application state.\n ",
+          "start": 559,
+          "end": 651,
+          "loc": {
+            "start": {
+              "line": 31,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 3
+            }
+          },
+          "range": [
+            559,
+            651
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 652,
+      "end": 713,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 61
+        }
+      },
+      "declaration": {
+        "type": "CallExpression",
+        "start": 667,
+        "end": 712,
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 15
+          },
+          "end": {
+            "line": 35,
+            "column": 60
+          }
+        },
+        "callee": {
+          "type": "Identifier",
+          "start": 667,
+          "end": 678,
+          "loc": {
+            "start": {
+              "line": 35,
+              "column": 15
+            },
+            "end": {
+              "line": 35,
+              "column": 26
+            }
+          },
+          "name": "createStore",
+          "leadingComments": null
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "start": 679,
+            "end": 686,
+            "loc": {
+              "start": {
+                "line": 35,
+                "column": 27
+              },
+              "end": {
+                "line": 35,
+                "column": 34
+              }
+            },
+            "name": "reducer"
+          },
+          {
+            "type": "Identifier",
+            "start": 688,
+            "end": 700,
+            "loc": {
+              "start": {
+                "line": 35,
+                "column": 36
+              },
+              "end": {
+                "line": 35,
+                "column": 48
+              }
+            },
+            "name": "initialState"
+          },
+          {
+            "type": "Identifier",
+            "start": 702,
+            "end": 711,
+            "loc": {
+              "start": {
+                "line": 35,
+                "column": 50
+              },
+              "end": {
+                "line": 35,
+                "column": 59
+              }
+            },
+            "name": "enhancers"
+          }
+        ],
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * @function represents the api for reading and writing to the\n * application state.\n ",
+            "start": 559,
+            "end": 651,
+            "loc": {
+              "start": {
+                "line": 31,
+                "column": 0
+              },
+              "end": {
+                "line": 34,
+                "column": 3
+              }
+            },
+            "range": [
+              559,
+              651
+            ]
+          }
+        ],
+        "trailingComments": []
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @function represents the api for reading and writing to the\n * application state.\n ",
+          "start": 559,
+          "end": 651,
+          "loc": {
+            "start": {
+              "line": 31,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 3
+            }
+          },
+          "range": [
+            559,
+            651
+          ]
+        }
+      ]
+    }
+  ]
+}

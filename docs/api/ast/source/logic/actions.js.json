@@ -1,0 +1,206 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 206,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 9,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ExportAllDeclaration",
+      "start": 35,
+      "end": 71,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 36
+        }
+      },
+      "source": {
+        "type": "Literal",
+        "start": 49,
+        "end": 70,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 14
+          },
+          "end": {
+            "line": 4,
+            "column": 35
+          }
+        },
+        "value": "./shipments/actions",
+        "rawValue": "./shipments/actions",
+        "raw": "'./shipments/actions'",
+        "leadingComments": null
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @module client2 actions\n ",
+          "start": 0,
+          "end": 34,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          },
+          "range": [
+            0,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "start": 72,
+      "end": 107,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 35
+        }
+      },
+      "source": {
+        "type": "Literal",
+        "start": 86,
+        "end": 106,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 14
+          },
+          "end": {
+            "line": 5,
+            "column": 34
+          }
+        },
+        "value": "./register/actions",
+        "rawValue": "./register/actions",
+        "raw": "'./register/actions'"
+      }
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "start": 108,
+      "end": 142,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 34
+        }
+      },
+      "source": {
+        "type": "Literal",
+        "start": 122,
+        "end": 141,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 14
+          },
+          "end": {
+            "line": 6,
+            "column": 33
+          }
+        },
+        "value": "./packets/actions",
+        "rawValue": "./packets/actions",
+        "raw": "'./packets/actions'"
+      }
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "start": 143,
+      "end": 174,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 31
+        }
+      },
+      "source": {
+        "type": "Literal",
+        "start": 157,
+        "end": 173,
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 14
+          },
+          "end": {
+            "line": 7,
+            "column": 30
+          }
+        },
+        "value": "./user/actions",
+        "rawValue": "./user/actions",
+        "raw": "'./user/actions'"
+      }
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "start": 175,
+      "end": 205,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 30
+        }
+      },
+      "source": {
+        "type": "Literal",
+        "start": 189,
+        "end": 204,
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 14
+          },
+          "end": {
+            "line": 8,
+            "column": 29
+          }
+        },
+        "value": "./app/actions",
+        "rawValue": "./app/actions",
+        "raw": "'./app/actions'"
+      }
+    }
+  ]
+}
